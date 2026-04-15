@@ -33,6 +33,8 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
+            this.dgvTeknisi = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeknisi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,11 +81,20 @@
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
             // 
+            // dgvTeknisi
+            // 
+            this.dgvTeknisi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTeknisi.Location = new System.Drawing.Point(12, 251);
+            this.dgvTeknisi.Name = "dgvTeknisi";
+            this.dgvTeknisi.Size = new System.Drawing.Size(760, 187);
+            this.dgvTeknisi.TabIndex = 5;
+            // 
             // txtNamaTeknisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvTeknisi);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnUpdate);
@@ -91,6 +102,7 @@
             this.Controls.Add(this.label1);
             this.Name = "txtNamaTeknisi";
             this.Text = "FormTeknisi";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeknisi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +115,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnSimpan;
+        private System.Windows.Forms.DataGridView dgvTeknisi;
     }
 }
