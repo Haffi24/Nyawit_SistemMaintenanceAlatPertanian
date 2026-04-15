@@ -72,6 +72,7 @@
             this.txtKondisi.Name = "txtKondisi";
             this.txtKondisi.Size = new System.Drawing.Size(239, 20);
             this.txtKondisi.TabIndex = 3;
+            this.txtKondisi.Click += new System.EventHandler(this.FormAlat_Load);
             // 
             // btnUpdate
             // 
@@ -81,6 +82,7 @@
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnHapus
             // 
@@ -90,6 +92,7 @@
             this.btnHapus.TabIndex = 5;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnSimpan
             // 
@@ -99,7 +102,7 @@
             this.btnSimpan.TabIndex = 6;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
-            this.btnSimpan.Click += new System.EventHandler(this.button3_Click);
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // dgvAlat
             // 
@@ -108,6 +111,7 @@
             this.dgvAlat.Name = "dgvAlat";
             this.dgvAlat.Size = new System.Drawing.Size(764, 261);
             this.dgvAlat.TabIndex = 7;
+            this.dgvAlat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlat_CellClick);
             // 
             // FormAlat
             // 
@@ -124,6 +128,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormAlat";
             this.Text = "FormAlat";
+            this.Load += new System.EventHandler(this.FormAlat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
