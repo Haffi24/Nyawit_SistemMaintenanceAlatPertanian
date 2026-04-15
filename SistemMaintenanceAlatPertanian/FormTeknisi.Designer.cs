@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNamaTeknisi = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
@@ -45,14 +45,14 @@
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama Teknisi";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtNamaTeknisi
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNamaTeknisi.Location = new System.Drawing.Point(179, 51);
+            this.txtNamaTeknisi.Name = "txtNamaTeknisi";
+            this.txtNamaTeknisi.Size = new System.Drawing.Size(305, 20);
+            this.txtNamaTeknisi.TabIndex = 1;
+            this.txtNamaTeknisi.Click += new System.EventHandler(this.FormTeknisi_Load);
             // 
             // btnUpdate
             // 
@@ -62,6 +62,7 @@
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnHapus
             // 
@@ -71,6 +72,7 @@
             this.btnHapus.TabIndex = 3;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnSimpan
             // 
@@ -80,6 +82,7 @@
             this.btnSimpan.TabIndex = 4;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // dgvTeknisi
             // 
@@ -88,6 +91,8 @@
             this.dgvTeknisi.Name = "dgvTeknisi";
             this.dgvTeknisi.Size = new System.Drawing.Size(760, 187);
             this.dgvTeknisi.TabIndex = 5;
+            this.dgvTeknisi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTeknisi_CellClick);
+            this.dgvTeknisi.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTeknisi_CellClick);
             // 
             // FormTeknisi
             // 
@@ -98,10 +103,11 @@
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNamaTeknisi);
             this.Controls.Add(this.label1);
             this.Name = "FormTeknisi";
             this.Text = "FormTeknisi";
+            this.Load += new System.EventHandler(this.FormTeknisi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeknisi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,7 +117,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNamaTeknisi;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnSimpan;

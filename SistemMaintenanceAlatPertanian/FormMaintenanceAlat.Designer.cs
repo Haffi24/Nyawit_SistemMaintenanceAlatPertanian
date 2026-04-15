@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbAlat = new System.Windows.Forms.ComboBox();
+            this.cbTeknisi = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTanggal = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtJenisPerbaikan = new System.Windows.Forms.TextBox();
+            this.txtKeterangan = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.dgvMaintenance = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaintenance)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,21 +55,21 @@
             this.label1.Text = "Pilih alat";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox1
+            // cbAlat
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(164, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(271, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cbAlat.FormattingEnabled = true;
+            this.cbAlat.Location = new System.Drawing.Point(164, 36);
+            this.cbAlat.Name = "cbAlat";
+            this.cbAlat.Size = new System.Drawing.Size(271, 21);
+            this.cbAlat.TabIndex = 3;
             // 
-            // comboBox2
+            // cbTeknisi
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(162, 80);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(272, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cbTeknisi.FormattingEnabled = true;
+            this.cbTeknisi.Location = new System.Drawing.Point(162, 80);
+            this.cbTeknisi.Name = "cbTeknisi";
+            this.cbTeknisi.Size = new System.Drawing.Size(272, 21);
+            this.cbTeknisi.TabIndex = 4;
             // 
             // label2
             // 
@@ -89,12 +89,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "tanggal perbaikan";
             // 
-            // dateTimePicker1
+            // dtpTanggal
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(204, 132);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpTanggal.Location = new System.Drawing.Point(204, 132);
+            this.dtpTanggal.Name = "dtpTanggal";
+            this.dtpTanggal.Size = new System.Drawing.Size(200, 20);
+            this.dtpTanggal.TabIndex = 7;
             // 
             // label4
             // 
@@ -114,79 +114,80 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "keterangan";
             // 
-            // textBox1
+            // txtJenisPerbaikan
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtJenisPerbaikan.Location = new System.Drawing.Point(192, 182);
+            this.txtJenisPerbaikan.Name = "txtJenisPerbaikan";
+            this.txtJenisPerbaikan.Size = new System.Drawing.Size(243, 20);
+            this.txtJenisPerbaikan.TabIndex = 10;
             // 
-            // textBox2
+            // txtKeterangan
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 221);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 28);
-            this.textBox2.TabIndex = 11;
+            this.txtKeterangan.Location = new System.Drawing.Point(191, 214);
+            this.txtKeterangan.Multiline = true;
+            this.txtKeterangan.Name = "txtKeterangan";
+            this.txtKeterangan.Size = new System.Drawing.Size(243, 28);
+            this.txtKeterangan.TabIndex = 11;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(650, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(650, 39);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnHapus
             // 
-            this.button2.Location = new System.Drawing.Point(650, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Hapus";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHapus.Location = new System.Drawing.Point(650, 73);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(75, 23);
+            this.btnHapus.TabIndex = 13;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnSimpan
             // 
-            this.button3.Location = new System.Drawing.Point(650, 102);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Simpan";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSimpan.Location = new System.Drawing.Point(650, 102);
+            this.btnSimpan.Name = "btnSimpan";
+            this.btnSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btnSimpan.TabIndex = 14;
+            this.btnSimpan.Text = "Simpan";
+            this.btnSimpan.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvMaintenance
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 248);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(780, 192);
-            this.dataGridView1.TabIndex = 15;
+            this.dgvMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaintenance.Location = new System.Drawing.Point(11, 248);
+            this.dgvMaintenance.Name = "dgvMaintenance";
+            this.dgvMaintenance.Size = new System.Drawing.Size(780, 192);
+            this.dgvMaintenance.TabIndex = 15;
             // 
             // FormMaintenanceAlat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgvMaintenance);
+            this.Controls.Add(this.btnSimpan);
+            this.Controls.Add(this.btnHapus);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.txtKeterangan);
+            this.Controls.Add(this.txtJenisPerbaikan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpTanggal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbTeknisi);
+            this.Controls.Add(this.cbAlat);
             this.Controls.Add(this.label1);
             this.Name = "FormMaintenanceAlat";
             this.Text = "FormMaintenanceAlat";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormMaintenanceAlat_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaintenance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,18 +196,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbAlat;
+        private System.Windows.Forms.ComboBox cbTeknisi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpTanggal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtJenisPerbaikan;
+        private System.Windows.Forms.TextBox txtKeterangan;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Button btnSimpan;
+        private System.Windows.Forms.DataGridView dgvMaintenance;
     }
 }

@@ -26,5 +26,10 @@ namespace SistemMaintenanceAlatPertanian
         {
 
         }
+
+        private void FormMaintenanceAlat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
