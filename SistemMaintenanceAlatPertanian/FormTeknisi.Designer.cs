@@ -30,6 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
+            this.btnSimpan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,11 +52,41 @@
             this.textBox1.Size = new System.Drawing.Size(305, 20);
             this.textBox1.TabIndex = 1;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(666, 51);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(83, 33);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnHapus
+            // 
+            this.btnHapus.Location = new System.Drawing.Point(666, 102);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(78, 31);
+            this.btnHapus.TabIndex = 3;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.UseVisualStyleBackColor = true;
+            // 
+            // btnSimpan
+            // 
+            this.btnSimpan.Location = new System.Drawing.Point(663, 149);
+            this.btnSimpan.Name = "btnSimpan";
+            this.btnSimpan.Size = new System.Drawing.Size(81, 30);
+            this.btnSimpan.TabIndex = 4;
+            this.btnSimpan.Text = "Simpan";
+            this.btnSimpan.UseVisualStyleBackColor = true;
+            // 
             // txtNamaTeknisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSimpan);
+            this.Controls.Add(this.btnHapus);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "txtNamaTeknisi";
@@ -67,5 +100,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Button btnSimpan;
     }
 }
