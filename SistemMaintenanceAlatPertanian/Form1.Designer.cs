@@ -48,7 +48,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 52);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Kelola Maintenance";
+            this.button2.Text = "Kelola Maintenance Alat";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
