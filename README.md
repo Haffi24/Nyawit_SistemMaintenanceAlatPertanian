@@ -10,7 +10,7 @@ Sistem Informasi Manajemen Data Maintenance Alat Pertanian berbasis Desktop (Win
 
 ---
 
-## 📸 Dokumentasi & Hasil Menjalankan Sistem
+## Dokumentasi & Hasil Menjalankan Sistem
 
 ### 1. Form Utama (Dashboard & Bukti Koneksi)
 *Dashboard utama saat aplikasi dijalankan, membuktikan aplikasi tidak crash dan koneksi Integrated Security berhasil.*
