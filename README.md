@@ -2,7 +2,7 @@
 
 Sistem Informasi Manajemen Data Maintenance Alat Pertanian berbasis Desktop (Windows Forms) menggunakan C# dan SQL Server. Aplikasi ini digunakan untuk mencatat aset alat, teknisi, dan riwayat perbaikan alat pertanian.
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 * **Bahasa Pemrograman:** C# (.NET Framework)
 * **Database:** Microsoft SQL Server
 * **Arsitektur:** ADO.NET (SqlDataReader & ExecuteNonQuery)
